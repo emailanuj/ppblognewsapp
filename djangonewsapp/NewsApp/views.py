@@ -5,7 +5,7 @@ def News(request):
     return HttpResponse('<h1>Hey Test Page From programming planet<h1>')
 
 def Home(request):
-    return HttpResponse('<b>This is home page</b>')
+    return render(request,'home.html')
 
 def Latest(request):
     return HttpResponse('<b>This is latest news page</b>')
