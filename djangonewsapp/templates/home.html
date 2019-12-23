@@ -8,6 +8,10 @@
     <b>Value from context<b><h2>{{ Name }}</h2>
     <p>Programming Languages</p>
     {% for language in  programming_languages %}
-        {{ language }}<br>
+    {% if language == "Python" %}
+        <b style="color:green">{{ language }}</b><br>
+    {% else %}
+    <b style="color:blue">{{ language }}</b><br>
+    {% endif %}
     {% endfor %}
 {% endblock %}
