@@ -5,4 +5,9 @@
 {% block body_content %}
   {% include 'navigation.html' %}
     <h1> This is Home Page </h1>
+    <b>Value from context<b><h2>{{ Name }}</h2>
+    <p>Programming Languages</p>
+    {% for language in  programming_languages %}
+        {{ language }}<br>
+    {% endfor %}
 {% endblock %}
